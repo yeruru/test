@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle; max-width: 100%;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: '\00a0';}
+
+
+/* common */
+body {font-family: 'CJONLYONENEW', sans-serif; font-size: 15px; font-weight: 300; color: #333333; line-height: 1.4; letter-spacing: -0.02em; background-color: #ffffff;}
+#wrapper {min-width: 1000px; overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+#main {}
+#main > section {}
+
+#main div.container {}
+#main div.container > ul {}
+#main div.container > ul > li {display: flex; background-color: yellow; padding: 40px 50px; box-sizing: border-box; align-items: center;}
+
+#main div.container > ul > li > div.text-box {width: calc(100% - 662px); background-color: pink;}
+#main div.container > ul > li > img {width: 662px; height: auto;}
+
+#main div.container div.text-box > p {font-size: 20px;}
+
+#main div.container > ul > li.reverse {flex-direction: row-reverse;}
+#main div.container > ul > li.reverse > div.text-box {}
+#main div.container > ul > li.reverse > img {width: 662px; height: auto;}
+
+
+
+
+.prac {}
+.prac > ul {}
+.prac > ul > li {}
+.prac > ul > li > a {display: block; height: 25px; box-sizing: border-box;}
+.prac > ul > li > a:hover {border-bottom: 1px solid #333333;}
